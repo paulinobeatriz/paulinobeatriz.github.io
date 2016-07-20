@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+.filter{
+	margin-right: auto;
+	margin-top: auto;
+	border:4px solid #DDCEEC;
+	float: right;
+	overflow: y;
+	}
+
+.another{
+	margin-right: auto;
+	float: right;
+}
+ 
+ .bea{
+	 transform: rotate(270deg);
+	 margin-right: 135px;
+	 margin-top: -76px;
+	 float: right;
+	 }
+	 
+  .me{
+	 margin-top: -37px;
+  }
+  
+  .tree{
+	margin-top: -165px;  
+	margin-right: 145px;
+	float: right;
+  }
+  
+  .new{
+	 float:left;
+  }
+  
+
+body{
+	background-image: url(../Desktop/spac.jpg);
+}
+
+h1 {
+	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 45px;
+	color: #8D94C8;
+	text-align: center
+	}
+
+h2 {
+	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 29x;
+	color: #8D94C8;
+	}
+	
+	.sm {
+    background-color:#8D94C8;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	}
+
+	.show {display:block;}
+	
+	.socialmedia{
+		margin-right: -903px;
+		
+		
+	}
+
+		
+	
+</style>
+
+</head>
+
+<body>
+
+<h1> BEATRIZ PAULINO </h1> 
+
+<!--</h1></h1>img src="../Desktop/me.jpg" id="bea"/-->
+<button Id="btn" onclick="myFunction()"> To see my books!
+</button>
+
+<script>
+	function myFunction() {
+			var image= document.getElementById ("bea");
+			if (image.src.match("../Desktop/books.jpg")){
+					image.src = '../Desktop/me.jpg';
+					} 
+			else {
+				image.src = '../Desktop/books.jpg';
+			}
+	}
+</script>
+
+
+<div class="filter">
+<h2> I am Beatriz Paulino and I am a rising junior. I attend Kipp Academy Lynn Collegiate. I aspire to do something big enough in the world to cause a change. Sounds dumb but I am quite cocky at times and I believe I can do it </h2> 
+</div>
+
+<div class="another">
+<img src= "../Desktop/me.jpg" alt="ya girl" id="bea" height="325px" />
+</div>
+
+<div class="bea">
+<img src= "../Desktop/family1.jpg" alt="annoying" height= "337px"/>
+</div>
+
+<div class= "me">
+<img src= "../Desktop/family2.jpg" alt="annoying2" height= "160px"/>
+</div>
+
+<div class="tree">
+<img src= "../Desktop/bestfriend.jpg" alt="annoying3" height= "160px"/>
+</div>
+
+<div class= "new">
+<img src = "../Desktop/books.jpg" height="3px"/>
+</div>
+
+  
+  
+<div class="socialmedia">
+<button id="sm" class="sm">Social Media</button>   
+</div>
+
+<script>
+document.getElementById("sm").onclick = function() {myFunction()};
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+</script>
+
+
+
+
+</body>
+</html>
