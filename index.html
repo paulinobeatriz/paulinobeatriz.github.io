@@ -1,250 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
 <style>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-<style>
-.filter{
-	margin-right: auto;
-	margin-top: auto;
-	border:4px solid #DDCEEC;
-	float: right;
-	overflow: y;
-	}
-
-.bea{
-	float: right;
-	margin-top:46px;
-	height:325px;
-
-}
- 
- .sister{
-	 transform: rotate(270deg);
-	 margin-right: 135px;
-	 margin-top: -26px;
-	 float: right;
-	 height:337px;
-	 }
-	 
-  .family{
-	 margin-bottom: -37px;
-	 height:160px;
-  }
-  
-  .bff{
-	margin-top: -75px;    
-	margin-right: 145px;
-	float: right;
-	height::160px;
-  }
-  
-  .new{
-	 float:left;
-  }
-  
-
 body{
-	background-image: url(../Desktop/spac.jpg);
+background-color:#C56C6E	
 }
-
-h1 {
-	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 45px;
-	color: #834893;
-	text-align: center
-	}
-
-h2 {
-	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 29x;
-	color: #8D94C8;
-	}
-	
-	/*<!--.sm {
-    background-color:#8D94C8;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-	} <br>*/
-
-	.show {display:block;}
-	
-	.socialmedia{
-		margin-right
-		
-		
-	} 
-	
-	.flower{
-		margin-right:-67px;
-		height:auto;}
-	
-	body {font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace, sans-serif;}
-
-.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: #ADB7D7;
-    width: 100px;
-    overflow: hidden;
-    border: 3px #ADB7D7;
-   }
-
-/* Float the list items side by side */
-.tab li {
-	float:right;
-	margin:auto;
-	}
-/* Style the links inside the list items */
-.tab li a {
-    display: inline-block;
-    color: #834893;
-    text-align:center;
-    padding: 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 23px;
-
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-    background-color: #BCCFD9;
-}
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-top: none;
-	}
-.centering{
-	width:100%;
-	margin:90px auto;
-	margin-right:-590px;
-	text-align:center;
-	align-items:center;
-	
-}
-		
-	
 </style>
-</head>
 
-<script>
-	function myFunction() {
-			var image= document.getElementById ("bea");
-			if (image.src.match("../Desktop/books.jpg")){
-				image.src = '../Desktop/me.jpg';
-					} 
-			else {
-				image.src = '../Desktop/books.jpg';
-			}
-	}
-</script>
 
 
 <body>
-
-<h1> BEATRIZ PAULINO </h1> 
-
-<!--</h1></h1>img src="../Desktop/me.jpg" id="bea"/-->
-					
-<!--<button Id="btn" onClick="myFunction()"> To see my books!
-</button>-->
-
-
-
-
-<!--div class="filter">
-<h2> I am Beatriz Paulino and I am a rising junior. I attend Kipp Academy Lynn Collegiate. I aspire to do something big enough in the world to cause a change. Sounds dumb but I am quite cocky at times and I believe I can do it </h2> 
-</div>-->
-
-<div class="bea">
-<img src= "../Desktop/me.jpg" alt="ya girl" id="bea" height="325px"  />
-</div>
-
-<div class="sister">
-<img src= "../Desktop/family1.jpg" alt="annoying" height= "337px"/>
-</div>
-
-<div class= "family">
-<img src= "../Desktop/family2.jpg" alt="annoying2" height= "160px" style="transform:translateY(47px)"/>
-</div>
-
-<div class="bff">
-<img src= "../Desktop/bestfriend.jpg" alt="annoying3" height= "160px"/>
-</div>
-
-<div class= "new">
-<img src = "../Desktop/books.jpg" height="3px"/>
-</div>
-
-<div class="flower">
-<img src = "../Desktop/flowers.jpg" height="3px"/>
-</div>
-	
-  <p>Welcome</p>
-<div class="centering">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<ul class="tab">
-  <li><a href="#" class="tablinks" onclick="openCity(event, 'About me')">About me</a></li>
-  <li><a href="#" class="tablinks" onclick="openCity(event, 'My hobbies')">My hobbies</a></li>
-  <li><a href="#" class="tablinks" onclick="openCity(event, 'Who I want to be')">Who I want to be</a></li>
-</ul>
-</div>
-<div id="About me" class="tabcontent">
-  <p>I am Beatriz Paulino and I am a rising junior who graduates high school in 2018. I was born in Dominican Republic and I was raised
-  in Washington D.C. I moved to Lynn, Massachusetts with my mother once my parents were separated. As a child I have been curious and 
-  afraid to speak up. I am still like that despite my attempts to try not to be unfortunately. At a young age I have pushed
-  myself to be smart and do my best in school. I have been an honor student since middle school. My life used to be just school and home,
-  but now I managed to do volunteer work and hang out more with my friends. I'm a typically shy person around new people 
-  which I am trying to fix. </p>
-</div>
-
-<div id="My hobbies" class="tabcontent">
-  <p>I am a very avid reader, my reading ranges from fantasy to historical fiction. I can basically read any book genre, and my
-  preference depends on my mood. I can read quite fast usually finishing abook in a couple of hours or even months. I enjoy 
-  watching Game of Thrones, Girl meets World, korean dramas, anime, and even cartoons at time. I like to write poetry at times
-  or doodle. I'm quite fond of kickboxing and volleyball. I like volunteering at the senior center but recently I haven't due to 
-  my upcoming schedule. </p>
-</div>
-
-<div id="Who i want to be" class="tabcontent">
-  <p>This is a strange one. But who I am right is not who I desire to be. I want to be this outspoken persom
-  who isn't bothered by what others think and will stand up for her rights and others. I want to be confident in what I do, feel,
-  and say. This is one of my struggles as a person. It may seem childish but I want to contribute a big change in our society, but I 
-  have to overcome my fear. That is who I wish to be and who I hope I grow up to be.</p>
-</div>
-
+<head>
+<h1 style="color:lightpink;text-align:center">YouScholar <img src="../Desktop/Logo.png" alt="ya girl" width="500" height="325px" id="bea"  /></h1>
+<p2 style="color:lightpink;text-allign:center">
+<title>YouScholar</title>
+  </head>
+  <body>
+   <table class="tborder" cellpadding="$stylevar[cellpadding]" cellspacing="$stylevar[cellspacing]" border="0" width="100%" align="center">
+ <tr>
+  <td class="thead" width="100%">
+   <div style="text-align: center;">
+    <strong>YouScholars Search *mirabelle add filtering*</strong>
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td class="alt1" width="100%">
+  <div class="smallfont" style="text-align: center;">
+   <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank">
+    <input id="vb_yt_search-term" name="search_query" type="text" maxlength="128" />
+    <select name="search_type">
+     <option value="" >Videos</option>
+     <option value="search_users">Channels</option>
+    </select>
+    <input type="submit" value="Search" />
+   </form>
+  </div>
+  </td>
+ </tr>
+</table>
+</p2>
 
 </body>
-
-
-</head>
 </html>
